@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    /**
+    /*
      * Create a new controller instance.
      *
      * @return void
@@ -23,6 +23,12 @@ class HomeController extends Controller
      */
     public function index()
     {
+        //$users = User::with('requests')->get();
+        //$requests = $user->
         return view('home');
+    }
+
+    public function show($user_id) {
+
     }
 }
